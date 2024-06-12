@@ -1,0 +1,105 @@
+body {
+    display:flex;
+    min-height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    min-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color:rgb(59, 109, 201);
+    font-weight: bold;
+}
+
+a:hover {
+    color:black;
+}
+
+header > img {
+    width: 200px ;
+}
+
+.top-nav {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-nav > nav {
+    flex-grow: 1;
+}
+
+.top-nav > nav > ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.top-nav > nav > li {
+    flex: auto;
+}
+
+.top-nav > nav > ul > li {
+    position: relative;
+}
+
+.top-nav > nav > ul > li:hover > .sub-nav {
+    display: block;
+}
+
+.top-nav > nav > ul > li {
+    position: relative;
+}
+
+.top-nav > nav {
+    flex-grow: 1;
+}
+
+.sub-nav {
+    position: absolute;
+    left: -4px;
+    display: none;
+    min-width: 150px;
+    background-color: rgb(237, 241, 241);
+    list-style: none;
+}
+
+.sub-nav > li {
+    padding: 4px;
+}
+
+.sub-nav:hover {
+    display: block;
+}
+
+.top-nav-selected {
+    color: black;
+}
+
+.top-nav > h1 {
+    font-size: 20px;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
